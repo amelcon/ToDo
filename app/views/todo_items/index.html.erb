@@ -1,12 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 <p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="jumbotron">
 
-<h1>Listing Todo Items</h1>
-
+<h1>2015-16 Miami Heat Roster</h1>
+</div>
+<body>
 <table>
   <thead>
     <tr>
-      <th>Description</th>
-      <th colspan="3"></th>
+      <th>Players</th>
     </tr>
   </thead>
 
@@ -18,10 +30,12 @@
         <td><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td>
         <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+
     <% end %>
   </tbody>
 </table>
+</body>
 
 <br>
 
-<%= link_to 'New Todo item', new_todo_item_path %>
+<%= link_to 'New Player', new_todo_item_path %>
